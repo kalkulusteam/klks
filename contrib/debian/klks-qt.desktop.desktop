@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=klks
+Comment=klks P2P Cryptocurrency
+Exec=klks-qt %u
+Terminal=false
+Type=Application
+Icon=klks128
+MimeType=x-scheme-handler/klks;
+Categories=Office;Finance;
+Name[it]=klks-qt.desktop
