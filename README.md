@@ -6,7 +6,7 @@ Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 <ul>
 <li><strong>Masternode technology</strong> used to secure the network</li>
 <li><strong>See-Saw Reward Mechanism: </strong>dynamic block reward allocation between masternodes and staking.</li>
-<li><strong>Governance Budgeting System: </strong>10% of each block reward goes to a fund for <span>allows node operators to vote on important proposal about developments within the blockchain.</span></li>
+<li><strong>Governance Budgeting System: </strong>10% of each block reward goes to a fund for <span>allows node operators to vote on important proposal about developments within the blockchain. (Only when active)</span></li>
 <li><strong>SwifTX</strong> for fast transactions with guaranteed zero confirmation.</li>
 <li><strong>Obfuscation protocol</strong> for anonymized transactions using coin mixing technology.</li>
 </ul>
