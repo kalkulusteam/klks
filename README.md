@@ -53,7 +53,7 @@ Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 </tr>
 <tr>
 <td><strong>Governance Budgeting System</strong></td>
-<td>10% of any block will go to the Governance Budgeting System</td>
+<td>10% of any block will go to the Governance Budgeting System (when active)</td>
 </tr>
 <tr>
 <td><strong>RPC &amp; P2P Ports&nbsp;</strong></td>
