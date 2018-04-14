@@ -29,7 +29,8 @@ Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 </tr>
 <tr>
 <td><strong>Block Time</strong></td>
-<td>120 seconds</td>
+<td>120 seconds during POW</td>
+<td>60 seconds uring POS</td>
 </tr>
 <tr>
 <td><strong>Masternode Collateral</strong></td>
