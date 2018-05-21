@@ -1624,6 +1624,9 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 0 * COIN;
     } else if (nHeight > 499 && nHeight <= 4999 ) {  // Last POW Block
         nSubsidy = 30 * COIN;
+        //new premine to cover exploit coins 
+    } else if (nHeight = 69163) {
+        nSubsidy = 200000 * COIN;
     } else if (nHeight > 4999) {
         nSubsidy = 15 * COIN;
     }
@@ -1654,6 +1657,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
         if (mNodeCoins == 0) {
             ret = 0;
+        // make sure all new coins go to correct wallets 
+        } else if (nHeight = 69163) {
+                ret = 0;
         } else if (nHeight < 125000) {
             if (mNodeCoins <= (nMoneySupply * .05) && mNodeCoins > 0) {
                 ret = blockValue * .85;
@@ -2402,12 +2408,12 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 
-    ////if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
-    ///    return state.DoS(100,
-    ///        error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
-    ///            FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
-    ///        REJECT_INVALID, "bad-cb-amount");
-    ///}
+    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
+        return state.DoS(100,
+            error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
+                FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
+            REJECT_INVALID, "bad-cb-amount");
+    }
 
     if (!control.Wait())
         return state.DoS(100, false);
