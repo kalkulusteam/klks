@@ -1006,6 +1006,13 @@ bool CheckTransaction(const CTransaction& tx, CValidationState& state)
         if (vInOutPoints.count(txin.prevout))
             return state.DoS(100, error("CheckTransaction() : duplicate inputs"),
                 REJECT_INVALID, "bad-txns-inputs-duplicate");
+         // Fix bad stake inputs
+        if (chainActive.Height() >= 71080) {
+            std::string txh = txin.prevout.hash.ToString();
+            if (txh == "0c0b80544fd578541015d0acbe372acf64dc33cdbea299bdbb2de2aaad6fb555")
+                return state.DoS(100, error("CheckTransaction() : bad inputs"),
+                                 REJECT_INVALID, "bad-txns-inputs-stake");
+        }
         vInOutPoints.insert(txin.prevout);
     }
 
@@ -1624,12 +1631,7 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 0 * COIN;
     } else if (nHeight > 499 && nHeight <= 4999 ) {  // Last POW Block
         nSubsidy = 30 * COIN;
-    } else if (nHeight > 4099 && nHeight <= 71085 ) {  // fork block
-        nSubsidy = 15 * COIN;
-        //new premine to cover exploit coins 
-    } else if (nHeight > 71085 && nHeight <= 71086) {
-        nSubsidy = 100000 * COIN;
-    } else if (nHeight > 71086) {
+    } else if (nHeight > 4999) {
         nSubsidy = 15 * COIN;
     }
 return nSubsidy;
@@ -1659,9 +1661,6 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
         if (mNodeCoins == 0) {
             ret = 0;
-        // make sure all new coins go to correct wallets 
- //       } else if (nHeight = 71086) {
- //               ret = 0;
         } else if (nHeight < 125000) {
             if (mNodeCoins <= (nMoneySupply * .05) && mNodeCoins > 0) {
                 ret = blockValue * .85;
