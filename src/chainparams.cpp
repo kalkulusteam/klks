@@ -336,7 +336,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
       (501, uint256("0x00000000000dc720e7fff625eed2facfc4cd3df117f6fa239aae709e152cb4a5")) //first rewarded block	
       (750, uint256("0x000000000002e3e19d2b148c2aba9dfa97426b8db489985e51c000114bb852e3"))
       (999, uint256("0x000000000000f0a0648fed54a85082f709f924e1ad7c8a4a5c35ebf7611f673f"))
-      (71085, uint256("0xeb0bc62711c80e5baa82ebfef4ced677f6bf36a21fe21e2240a5edfd274b9083"))
+      (71085, uint256("0xeb0bc62711c80e5baa82ebfef4ced677f6bf36a21fe21e2240a5edfd274b9083")) //rollback
 	;
 
 static const Checkpoints::CCheckpointData data = {
@@ -425,10 +425,15 @@ public:
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
 	convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
-        vSeeds.push_back(CDNSSeedData("209.250.242.79", "209.250.242.79")); // Amsterdam Node1
-        vSeeds.push_back(CDNSSeedData("199.247.28.77", "199.247.28.77"));   // Amsterdam Node2
-        vSeeds.push_back(CDNSSeedData("45.63.99.2", "45.63.99.2")); // London Node1
-        vSeeds.push_back(CDNSSeedData("45.32.151.186", "45.32.151.186")); // Paris Node1
+	vSeeds.push_back(CDNSSeedData("149.28.44.82", "149.28.44.82"));
+	vSeeds.push_back(CDNSSeedData("144.202.52.213", "144.202.52.213"));
+	vSeeds.push_back(CDNSSeedData("45.76.68.81", "45.76.68.81"));
+        vSeeds.push_back(CDNSSeedData("209.250.242.79", "209.250.242.79"));
+	vSeeds.push_back(CDNSSeedData("45.63.99.2", "45.63.99.2"));
+        vSeeds.push_back(CDNSSeedData("199.247.1.131", "199.247.1.131"));
+        vSeeds.push_back(CDNSSeedData("199.247.28.77", "199.247.28.77"));
+	vSeeds.push_back(CDNSSeedData("199.247.22.205", "199.247.22.205"));
+	vSeeds.push_back(CDNSSeedData("45.32.151.186", "45.32.151.186"));
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
