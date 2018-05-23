@@ -1006,6 +1006,13 @@ bool CheckTransaction(const CTransaction& tx, CValidationState& state)
         if (vInOutPoints.count(txin.prevout))
             return state.DoS(100, error("CheckTransaction() : duplicate inputs"),
                 REJECT_INVALID, "bad-txns-inputs-duplicate");
+         // Fix bad stake inputs
+        if (chainActive.Height() >= 71080) {
+            std::string txh = txin.prevout.hash.ToString();
+            if (txh == "0c0b80544fd578541015d0acbe372acf64dc33cdbea299bdbb2de2aaad6fb555")
+                return state.DoS(100, error("CheckTransaction() : bad inputs"),
+                                 REJECT_INVALID, "bad-txns-inputs-stake");
+        }
         vInOutPoints.insert(txin.prevout);
     }
 
@@ -1654,7 +1661,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
         if (mNodeCoins == 0) {
             ret = 0;
-        } else if (nHeight < 125000) {
+        } else if (nHeight <= 125000) {
             if (mNodeCoins <= (nMoneySupply * .05) && mNodeCoins > 0) {
                 ret = blockValue * .85;
             } else if (mNodeCoins <= (nMoneySupply * .1) && mNodeCoins > (nMoneySupply * .05)) {
@@ -2402,12 +2409,12 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 
-    ////if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
-    ///    return state.DoS(100,
-    ///        error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
-    ///            FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
-    ///        REJECT_INVALID, "bad-cb-amount");
-    ///}
+    if (pindex->nHeight >= 71000 && !IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
+        return state.DoS(100,
+            error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
+                FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
+            REJECT_INVALID, "bad-cb-amount");
+    }
 
     if (!control.Wait())
         return state.DoS(100, false);
@@ -5589,8 +5596,6 @@ int ActiveProtocol()
     }
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
-*/
-
 
     // SPORK_15 is used for 70910. Nodes < 70910 don't see it and still get their protocol version via SPORK_14 and their 
     // own ModifierUpgradeBlock()
@@ -5598,7 +5603,9 @@ int ActiveProtocol()
     if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
             return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
-    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
+    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;*/
+    return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    
 }
 
 // requires LOCK(cs_vRecvMsg)
