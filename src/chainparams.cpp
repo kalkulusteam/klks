@@ -425,13 +425,16 @@ public:
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
 	convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
-	vSeeds.push_back(CDNSSeedData("149.28.44.82", "149.28.44.82"));
+	vSeeds.push_back(CDNSSeedData("207.148.11.121", "207.148.11.121"));
 	vSeeds.push_back(CDNSSeedData("144.202.52.213", "144.202.52.213"));
-	vSeeds.push_back(CDNSSeedData("45.76.68.81", "45.76.68.81"));
-        vSeeds.push_back(CDNSSeedData("209.250.242.79", "209.250.242.79"));
+	vSeeds.push_back(CDNSSeedData("209.250.242.79", "209.250.242.79"));
 	vSeeds.push_back(CDNSSeedData("45.63.99.2", "45.63.99.2"));
-        vSeeds.push_back(CDNSSeedData("199.247.1.131", "199.247.1.131"));
-        vSeeds.push_back(CDNSSeedData("199.247.28.77", "199.247.28.77"));
+	vSeeds.push_back(CDNSSeedData("80.240.17.134", "80.240.17.134"));
+	vSeeds.push_back(CDNSSeedData("45.32.132.210", "45.32.132.210"));
+	vSeeds.push_back(CDNSSeedData("199.247.28.77", "199.247.28.77"));	
+	vSeeds.push_back(CDNSSeedData("149.28.44.82", "149.28.44.82"));
+	vSeeds.push_back(CDNSSeedData("45.76.68.81", "45.76.68.81"));
+        vSeeds.push_back(CDNSSeedData("199.247.1.131", "199.247.1.131"));        
 	vSeeds.push_back(CDNSSeedData("199.247.22.205", "199.247.22.205"));
 	vSeeds.push_back(CDNSSeedData("45.32.151.186", "45.32.151.186"));
         fRequireRPCPassword = true;
