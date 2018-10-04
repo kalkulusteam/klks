@@ -1,0 +1,26 @@
+# /etc/conf.d/klksd: config file for /etc/init.d/klksd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/klks/klks.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/klksd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/klksd.pid"
+
+# Where to write klksd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/klksd"
+
+# User and group to own klksd process
+#BITCOIND_USER="klks"
+#BITCOIND_GROUP="klks"
+
+# Path to klksd executable
+#BITCOIND_BIN="/usr/bin/klksd"
+
+# Nice value to run klksd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

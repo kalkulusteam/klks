@@ -1,0 +1,11 @@
+[Protocol]
+exec=klks-qt '%u'
+protocol=klks
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
