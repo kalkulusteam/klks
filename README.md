@@ -106,6 +106,10 @@ Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 <td style="width: 93px;"><strong>Website</strong></td>
 <td style="width: 270px;"><a href="http://kalkulus.trade/">http://www.kalkulus.trade</a></td>
 </tr>
+<tr>
+<td style="width: 93px;"><strong>The Hub</strong></td>
+<td style="width: 270px;"><a href="https://hub.kalkul.us/">https://hub.kalkul.us</a></td>
+</tr>
 </tbody>
 </table>
 <p></p>
