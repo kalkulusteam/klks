@@ -1617,7 +1617,6 @@ double ConvertBitsToDouble(unsigned int nBits)
 
     return dDiff;
 }
-
 int64_t GetBlockValue(int nHeight)
 {
 
@@ -1632,8 +1631,32 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 0 * COIN;
     } else if (nHeight > 499 && nHeight <= 4999 ) {  // Last POW Block
         nSubsidy = 30 * COIN;
-    } else if (nHeight > 4999) {
+    } else if (nHeight > 4999 && nHeight <= 355808 ) { // Last block for fork height to new block reward - Approx 10.12.2018
         nSubsidy = 15 * COIN;
+    } else if (nHeight > 355808 && nHeight <= 399009 ) {
+        nSubsidy = 12 * COIN;
+    } else if (nHeight > 399009 && nHeight <= 442210 ) {
+        nSubsidy = 9.6 * COIN;
+    } else if (nHeight > 442210 && nHeight <= 485411 ) {
+        nSubsidy = 7.7 * COIN;
+    } else if (nHeight > 485411 && nHeight <= 528612 ) {
+        nSubsidy = 6.15 * COIN;
+    } else if (nHeight > 528612 && nHeight <= 615013 ) {
+        nSubsidy = 5.25 * COIN;
+    } else if (nHeight > 615013 && nHeight <= 701414 ) {
+        nSubsidy = 4.45 * COIN;
+    } else if (nHeight > 701414 && nHeight <= 787815 ) {
+        nSubsidy = 3.8 * COIN;
+    } else if (nHeight > 787815 && nHeight <= 874216 ) {
+        nSubsidy = 3.2 * COIN;
+    } else if (nHeight > 874216 && nHeight <= 1003817 ) {
+        nSubsidy = 2.75 * COIN;
+    } else if (nHeight > 1003817 && nHeight <= 1133418 ) {
+        nSubsidy = 2.45 * COIN;
+    } else if (nHeight > 1133418 && nHeight <= 1263019 ) {
+        nSubsidy = 2.2 * COIN;
+    } else if (nHeight > 1263019) {
+        nSubsidy = 2 * COIN;
     }
 return nSubsidy;
 }
