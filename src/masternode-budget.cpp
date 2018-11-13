@@ -31,7 +31,7 @@ int GetBudgetPaymentCycleBlocks()
     if (Params().NetworkID() == CBaseChainParams::MAIN) return 21600;
     //for testing purposes
 
-    return 72; //ten times per day with block time 120 sec - if block time 60, change 72 to 144
+    return 144; //ten times per day with block time 120 sec - if block time 60, change 72 to 144
 }
 
 bool IsBudgetCollateralValid(uint256 nTxCollateralHash, uint256 nExpectedHash, std::string& strError, int64_t& nTime, int& nConf)
@@ -791,21 +791,42 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         CAmount nSubsidy = 500 * COIN;
-        return ((nSubsidy / 100) * 10) * 146;
+        return ((nSubsidy / 100) * 10) * 146; //max budget for testnet 7300
     }
 
     //get block value and calculate from that
     CAmount nSubsidy = 0;
-    if (nHeight > 1999) {
-        nSubsidy = 16.5 * COIN;
-    } else {
-        nSubsidy = 0 * COIN;
+    if (nHeight > 4999 && nHeight <= 355808 ) { // Last block for fork height to new block reward - Approx 10.12.2018
+        nSubsidy = 0.15 * COIN;
+    } else if (nHeight > 355808 && nHeight <= 399009 ) {
+        nSubsidy = 0.12 * COIN;
+    } else if (nHeight > 399009 && nHeight <= 442210 ) {
+        nSubsidy = 0.96 * COIN;
+    } else if (nHeight > 442210 && nHeight <= 485411 ) {
+        nSubsidy = 0.77 * COIN;
+    } else if (nHeight > 485411 && nHeight <= 528612 ) {
+        nSubsidy = 0.615 * COIN;
+    } else if (nHeight > 528612 && nHeight <= 615013 ) {
+        nSubsidy = 0.525 * COIN;
+    } else if (nHeight > 615013 && nHeight <= 701414 ) {
+        nSubsidy = 0.445 * COIN;
+    } else if (nHeight > 701414 && nHeight <= 787815 ) {
+        nSubsidy = 0.38 * COIN;
+    } else if (nHeight > 787815 && nHeight <= 874216 ) {
+        nSubsidy = 0.32 * COIN;
+    } else if (nHeight > 874216 && nHeight <= 1003817 ) {
+        nSubsidy = 0.275 * COIN;
+    } else if (nHeight > 1003817 && nHeight <= 1133418 ) {
+        nSubsidy = 0.245 * COIN;
+    } else if (nHeight > 1133418 && nHeight <= 1263019 ) {
+        nSubsidy = 0.22 * COIN;
+    } else if (nHeight > 1263019) {
+        nSubsidy = 0.2 * COIN;
     }
 
     // Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)=43200 [superblock]
-            // in our case with 2 minutes per block = (30*24*30)= 21600
 
-    return ((nSubsidy / 100) * 10) * 720 * 30;
+    return ((nSubsidy / 100) * 10) * 1440 * 30; //10% of one month reward
 
 }
 
