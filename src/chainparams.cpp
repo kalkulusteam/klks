@@ -395,7 +395,7 @@ public:
         nLastPOWBlock = 4999;   //Last Pow Block
         nMaturity = 20;
         nMasternodeCountDrift = 20;
-        nModifierUpdateBlock = 615800;
+        nModifierUpdateBlock = 355808;  // update to fork block
         nMaxMoneyOut = 20000000 * COIN;
 
         const char* pszTimestamp = "Consultants for Trump Misused Facebook Data of Millions // From NYT 18th of March, 2018";
