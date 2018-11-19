@@ -396,7 +396,7 @@ public:
         nLastPOWBlock = 4999;   //Last Pow Block
         nMaturity = 20;
         nMasternodeCountDrift = 20;
-        nModifierUpdateBlock = 615800; // this needs to be checked for future changes
+        nModifierUpgradeBlock = 380166;  // update to fork block
         nRewardUpdateBlock = 380166; // start of new rewards only used to disconnect old protocol so may be removed after fork block
         nMaxMoneyOut = 20000000 * COIN;
 
