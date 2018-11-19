@@ -77,6 +77,7 @@ public:
     int LAST_POW_BLOCK() const { return nLastPOWBlock; }
     int COINBASE_MATURITY() const { return nMaturity; }
     int ModifierUpgradeBlock() const { return nModifierUpgradeBlock; }
+    int RewardUpdateBlock() const { return nRewardUpdateBlock; } // updated rewards will cutoff old client
     CAmount MaxMoneyOut() const { return nMaxMoneyOut; }
     /** The masternode count that we will allow the see-saw reward payments to be off by */
     int MasternodeCountDrift() const { return nMasternodeCountDrift; }
@@ -139,7 +140,7 @@ protected:
     int64_t nStartMasternodePayments;
 };
 
-/** 
+/**
  * Modifiable parameters interface is used by test cases to adapt the parameters in order
  * to test specific features more easily. Test cases should always restore the previous
  * values after finalization.

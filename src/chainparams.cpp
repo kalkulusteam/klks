@@ -334,7 +334,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
       boost::assign::map_list_of
       (0, uint256("0xe109a992cb29055263861f14177973a8e352e40668a26e16e94accbd17b1a192"))
-      (501, uint256("0x00000000000dc720e7fff625eed2facfc4cd3df117f6fa239aae709e152cb4a5")) //first rewarded block	
+      (501, uint256("0x00000000000dc720e7fff625eed2facfc4cd3df117f6fa239aae709e152cb4a5")) //first rewarded block
       (750, uint256("0x000000000002e3e19d2b148c2aba9dfa97426b8db489985e51c000114bb852e3"))
       (999, uint256("0x000000000000f0a0648fed54a85082f709f924e1ad7c8a4a5c35ebf7611f673f"))
       (71085, uint256("0xeb0bc62711c80e5baa82ebfef4ced677f6bf36a21fe21e2240a5edfd274b9083")) //rollback
@@ -396,7 +396,8 @@ public:
         nLastPOWBlock = 4999;   //Last Pow Block
         nMaturity = 20;
         nMasternodeCountDrift = 20;
-        nModifierUpgradeBlock = 355808;  // update to fork block
+        nModifierUpdateBlock = 615800; // this needs to be checked for future changes
+        nRewardUpdateBlock = 380166; // start of new rewards only used to disconnect old protocol so may be removed after fork block
         nMaxMoneyOut = 20000000 * COIN;
 
         const char* pszTimestamp = "Consultants for Trump Misused Facebook Data of Millions // From NYT 18th of March, 2018";
@@ -417,7 +418,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0xe109a992cb29055263861f14177973a8e352e40668a26e16e94accbd17b1a192"));
-      
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 46);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 174);
@@ -433,10 +434,10 @@ public:
 	vSeeds.push_back(CDNSSeedData("45.63.99.2", "45.63.99.2"));
 	vSeeds.push_back(CDNSSeedData("80.240.17.134", "80.240.17.134"));
 	vSeeds.push_back(CDNSSeedData("45.32.132.210", "45.32.132.210"));
-	vSeeds.push_back(CDNSSeedData("199.247.28.77", "199.247.28.77"));	
+	vSeeds.push_back(CDNSSeedData("199.247.28.77", "199.247.28.77"));
 	vSeeds.push_back(CDNSSeedData("149.28.44.82", "149.28.44.82"));
 	vSeeds.push_back(CDNSSeedData("45.76.68.81", "45.76.68.81"));
-        vSeeds.push_back(CDNSSeedData("199.247.1.131", "199.247.1.131"));        
+        vSeeds.push_back(CDNSSeedData("199.247.1.131", "199.247.1.131"));
 	vSeeds.push_back(CDNSSeedData("199.247.22.205", "199.247.22.205"));
 	vSeeds.push_back(CDNSSeedData("45.32.151.186", "45.32.151.186"));
         fRequireRPCPassword = true;
@@ -503,11 +504,11 @@ public:
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 46); // Testnet klks addresses start with 'k'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 41);  // Testnet klks script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 174);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet klks BIP32 pubkeys 
+        // Testnet klks BIP32 pubkeys
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x61)(0x60)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet klks BIP32 prvkeys 
+        // Testnet klks BIP32 prvkeys
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x88)(0x57)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet klks BIP44 
+        // Testnet klks BIP44
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));

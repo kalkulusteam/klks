@@ -51,7 +51,7 @@ using namespace boost;
 #define SPORK_11_RESET_BUDGET_DEFAULT 0
 #define SPORK_12_RECONSIDER_BLOCKS_DEFAULT 0
 #define SPORK_13_ENABLE_SUPERBLOCKS_DEFAULT 4070908800            //OFF
-#define SPORK_14_NEW_PROTOCOL_ENFORCEMENT_DEFAULT 1544436240      //ON GMT: Monday 10 December 2018 approx 10:04:37
+#define SPORK_14_NEW_PROTOCOL_ENFORCEMENT_DEFAULT 1545901462      //ON GMT: Thursday 27 December 2018 approx 10:04:22
 #define SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2_DEFAULT 4070908800    //OFF
 #define SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT 8000               // Age in seconds. This should be > MASTERNODE_REMOVAL_SECONDS to avoid
                                                                   // misconfigured new nodes in the list.
