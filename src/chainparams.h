@@ -116,7 +116,8 @@ protected:
     int nLastPOWBlock;
     int nMasternodeCountDrift;
     int nMaturity;
-    int nModifierUpdateBlock;
+    int nModifierUpgradeBlock;
+    int nRewardUpdateBlock;
     CAmount nMaxMoneyOut;
     int nMinerThreads;
     std::vector<CDNSSeedData> vSeeds;
