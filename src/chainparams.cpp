@@ -339,14 +339,15 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
       (999, uint256("0x000000000000f0a0648fed54a85082f709f924e1ad7c8a4a5c35ebf7611f673f"))
       (71085, uint256("0xeb0bc62711c80e5baa82ebfef4ced677f6bf36a21fe21e2240a5edfd274b9083")) //rollback
       (307350, uint256("0x2f5377722c396791d007da5f494b394f42d69a0b9ad851e7772e9985b8c471ac"))
+      (332974, uint256("0xf6a9467987c30133c6e9dd5e6975e33bf68373654452bc474c46fc86fbec424e")) // this checkpoint is written in the blockchain https://chainz.cryptoid.info/klks/tx.dws?717308.htm output 1
 	;
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1541507998, // * UNIX timestamp of last checkpoint block
-    655361,    // * total number of transactions between genesis and last checkpoint
+    1543047640, // * UNIX timestamp of last checkpoint block
+    714138,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    2810        // * estimated number of transactions per day after checkpoint
+    3        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
