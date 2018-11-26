@@ -27,7 +27,7 @@
 <<<<<<< HEAD
 #define COPYRIGHT_YEAR 2018
 =======
-#define COPYRIGHT_YEAR 2010
+#define COPYRIGHT_YEAR 2018
 >>>>>>> 9ed579e24a278b22171dc00dd17cc240cc96772b
 
 /* Define to 1 to enable wallet functions */
