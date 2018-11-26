@@ -18,13 +18,13 @@
 #define CLIENT_VERSION_MAJOR 2
 
 /* Minor version */
-#define CLIENT_VERSION_MINOR 4
+#define CLIENT_VERSION_MINOR 7
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 1
+#define CLIENT_VERSION_REVISION 0
 
 /* Version is release */
-#define COPYRIGHT_YEAR 2017
+#define COPYRIGHT_YEAR 2018
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
