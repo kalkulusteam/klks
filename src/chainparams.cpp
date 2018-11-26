@@ -397,8 +397,8 @@ public:
         nLastPOWBlock = 4999;   //Last Pow Block
         nMaturity = 20;
         nMasternodeCountDrift = 20;
-        nModifierUpgradeBlock = 380166;  // update to fork block
-        nRewardUpdateBlock = 380166; // start of new rewards only used to disconnect old protocol so may be removed after fork block
+        nModifierUpgradeBlock = 380712;  // update to fork block - approx 1PM GMT+1 27th of December, 2018 
+        nRewardUpdateBlock = 380712; // start of new rewards only used to disconnect old protocol so may be removed after fork block
         nMaxMoneyOut = 20000000 * COIN;
 
         const char* pszTimestamp = "Consultants for Trump Misused Facebook Data of Millions // From NYT 18th of March, 2018";

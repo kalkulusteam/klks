@@ -1631,31 +1631,31 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 0 * COIN;
     } else if (nHeight > 499 && nHeight <= 4999 ) {  // Last POW Block
         nSubsidy = 30 * COIN;
-    } else if (nHeight > 4999 && nHeight <= 355808 ) { // Last block for fork height to new block reward - Approx 10.12.2018
+    } else if (nHeight > 4999 && nHeight <= 380712 ) { // Last block for fork height to new block reward - Approx 27.12.2018 1PM GMT +1
         nSubsidy = 15 * COIN;
-    } else if (nHeight > 355808 && nHeight <= 399009 ) {
+    } else if (nHeight > 380712 && nHeight <= 423913 ) {
         nSubsidy = 12 * COIN;
-    } else if (nHeight > 399009 && nHeight <= 442210 ) {
+    } else if (nHeight > 423913 && nHeight <= 467114 ) {
         nSubsidy = 9.6 * COIN;
-    } else if (nHeight > 442210 && nHeight <= 485411 ) {
+    } else if (nHeight > 467114 && nHeight <= 510315 ) {
         nSubsidy = 7.7 * COIN;
-    } else if (nHeight > 485411 && nHeight <= 528612 ) {
+    } else if (nHeight > 510315 && nHeight <= 553516 ) {
         nSubsidy = 6.15 * COIN;
-    } else if (nHeight > 528612 && nHeight <= 615013 ) {
+    } else if (nHeight > 553516 && nHeight <= 639917 ) {
         nSubsidy = 5.25 * COIN;
-    } else if (nHeight > 615013 && nHeight <= 701414 ) {
+    } else if (nHeight > 639917 && nHeight <= 726318 ) {
         nSubsidy = 4.45 * COIN;
-    } else if (nHeight > 701414 && nHeight <= 787815 ) {
+    } else if (nHeight > 726318 && nHeight <= 812719 ) {
         nSubsidy = 3.8 * COIN;
-    } else if (nHeight > 787815 && nHeight <= 874216 ) {
+    } else if (nHeight > 812719 && nHeight <= 899120 ) {
         nSubsidy = 3.2 * COIN;
-    } else if (nHeight > 874216 && nHeight <= 1003817 ) {
+    } else if (nHeight > 899120 && nHeight <= 1028721 ) {
         nSubsidy = 2.75 * COIN;
-    } else if (nHeight > 1003817 && nHeight <= 1133418 ) {
+    } else if (nHeight > 1028721 && nHeight <= 1158322 ) {
         nSubsidy = 2.45 * COIN;
-    } else if (nHeight > 1133418 && nHeight <= 1263019 ) {
+    } else if (nHeight > 1158322 && nHeight <= 1287923 ) {
         nSubsidy = 2.2 * COIN;
-    } else if (nHeight > 1263019) {
+    } else if (nHeight > 1287923) {
         nSubsidy = 2 * COIN;
     }
 return nSubsidy;

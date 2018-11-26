@@ -116,19 +116,19 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     if (prev->nHeight > 9 && prev->nHeight <= 49) { txNew.vout[0].nValue = 225000 * COIN;} // 9 million coins premine for swap KLK > KLKS
     if (prev->nHeight > 49 && prev->nHeight <= 499) { txNew.vout[0].nValue = 0 * COIN;} // Empty block to asset blockchain
     if (prev->nHeight > 499 && prev->nHeight <= 4999) { txNew.vout[0].nValue = 30 * COIN;}  // Reward for the POW phase
-    if (prev->nHeight > 4999 && prev->nHeight <= 355808) { txNew.vout[0].nValue = 15 * COIN;}  // Last block for fork height to new block reward - Approx 10.12.2018
-    if (prev->nHeight > 355808 && prev->nHeight <= 399009) { txNew.vout[0].nValue = 12 * COIN;}
-    if (prev->nHeight > 399009 && prev->nHeight <= 442210) { txNew.vout[0].nValue = 9.6 * COIN;}
-    if (prev->nHeight > 442210 && prev->nHeight <= 485411) { txNew.vout[0].nValue = 7.7 * COIN;}
-    if (prev->nHeight > 485411 && prev->nHeight <= 528612) { txNew.vout[0].nValue = 6.15 * COIN;}
-    if (prev->nHeight > 528612 && prev->nHeight <= 615013) { txNew.vout[0].nValue = 5.25 * COIN;}
-    if (prev->nHeight > 615013 && prev->nHeight <= 701414) { txNew.vout[0].nValue = 4.45 * COIN;}
-    if (prev->nHeight > 701414 && prev->nHeight <= 787815) { txNew.vout[0].nValue = 3.8 * COIN;}
-    if (prev->nHeight > 787815 && prev->nHeight <= 874216) { txNew.vout[0].nValue = 3.2 * COIN;}
-    if (prev->nHeight > 874216 && prev->nHeight <= 1003817) { txNew.vout[0].nValue = 2.75 * COIN;}
-    if (prev->nHeight > 1003817 && prev->nHeight <= 1133418) { txNew.vout[0].nValue = 2.45 * COIN;}
-    if (prev->nHeight > 1133418 && prev->nHeight <= 1263019) { txNew.vout[0].nValue = 2.20 * COIN;}
-    if (prev->nHeight > 1263019) { txNew.vout[0].nValue = 2 * COIN;}   //  Block reward until max coin supply of 20 million coins
+    if (prev->nHeight > 4999 && prev->nHeight <= 380712) { txNew.vout[0].nValue = 15 * COIN;}  // Last block for fork height to new block reward - Approx 27.12.2018 1PM GMT +1
+    if (prev->nHeight > 380712 && prev->nHeight <= 423913) { txNew.vout[0].nValue = 12 * COIN;}
+    if (prev->nHeight > 423913 && prev->nHeight <= 467114) { txNew.vout[0].nValue = 9.6 * COIN;}
+    if (prev->nHeight > 467114 && prev->nHeight <= 510315) { txNew.vout[0].nValue = 7.7 * COIN;}
+    if (prev->nHeight > 510315 && prev->nHeight <= 553516) { txNew.vout[0].nValue = 6.15 * COIN;}
+    if (prev->nHeight > 553516 && prev->nHeight <= 639917) { txNew.vout[0].nValue = 5.25 * COIN;}
+    if (prev->nHeight > 639917 && prev->nHeight <= 726318) { txNew.vout[0].nValue = 4.45 * COIN;}
+    if (prev->nHeight > 726318 && prev->nHeight <= 812719) { txNew.vout[0].nValue = 3.8 * COIN;}
+    if (prev->nHeight > 812719 && prev->nHeight <= 899120) { txNew.vout[0].nValue = 3.2 * COIN;}
+    if (prev->nHeight > 899120 && prev->nHeight <= 1028721) { txNew.vout[0].nValue = 2.75 * COIN;}
+    if (prev->nHeight > 1028721 && prev->nHeight <= 1158322) { txNew.vout[0].nValue = 2.45 * COIN;}
+    if (prev->nHeight > 1158322 && prev->nHeight <= 1287923) { txNew.vout[0].nValue = 2.20 * COIN;}
+    if (prev->nHeight > 1287923) { txNew.vout[0].nValue = 2 * COIN;}   //  Block reward until max coin supply of 20 million coins
     pblock->vtx.push_back(txNew);
     pblocktemplate->vTxFees.push_back(-1);   // updated at end
     pblocktemplate->vTxSigOps.push_back(-1); // updated at end
