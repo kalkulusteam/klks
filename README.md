@@ -1,17 +1,16 @@
-<a href="http://www.kalkulus.trade/"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.imgur.com/TDhrEOP.png"/></a>
-<p style="text-align: center;"><strong></strong></p>
-<p><strong>Kalkulus Client Official Repository</strong><br><br>
-Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
+<p><a href="http://www.kalkulus.trade/"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.imgur.com/TDhrEOP.png" /></a></p>
+<p style="text-align: center;">&nbsp;</p>
+<p><strong>Kalkulus Client Official Repository</strong><br /><br /> Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 <p><strong>Main Features:</strong></p>
 <ul>
 <li><strong>Masternode technology</strong> used to secure the network</li>
 <li><strong>See-Saw Reward Mechanism: </strong>dynamic block reward allocation between masternodes and staking.</li>
-<li><strong>Governance Budgeting System: </strong>10% of each block reward goes to a fund for <span>allows node operators to vote on important proposal about developments within the blockchain. (Only when active)</span></li>
+<li><strong>Governance Budgeting System: </strong>10% of each block reward goes to a fund for allows node operators to vote on important proposal about developments within the blockchain. (Only when active)</li>
 <li><strong>SwifTX</strong> for fast transactions with guaranteed zero confirmation.</li>
 <li><strong>Obfuscation protocol</strong> for anonymized transactions using coin mixing technology.</li>
 </ul>
 <p>More information at <a href="http://www.kalkulus.trade" target="_blank" rel="noopener">http://www.kalkulus.trade</a></p>
-<p><strong></strong></p>
+<p>&nbsp;</p>
 <p><strong>Coin Specs</strong></p>
 <table>
 <tbody>
@@ -30,7 +29,7 @@ Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 <tr>
 <td><strong>Block Time</strong></td>
 <td>120 seconds [POW] / 60 seconds [POS]</td>
-<td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
 <td><strong>Masternode Collateral</strong></td>
@@ -62,7 +61,7 @@ Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 </tr>
 </tbody>
 </table>
-<p><strong></strong></p>
+<p>&nbsp;</p>
 <p><strong>PoW/PoS Block Reward Scheme</strong></p>
 <table>
 <tbody>
@@ -76,7 +75,64 @@ Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 </tr>
 </tbody>
 </table>
-<p><strong></strong></p>
+<p><strong>Block Reward Breakdown</strong></p>
+<table style="width: 400px;">
+<tbody>
+<tr>
+<td style="width: 295px;"><strong>Up to block 380711</strong></td>
+<td style="width: 95px;">15 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>From block 380712 to 423913</strong></td>
+<td style="width: 95px;">12 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 467114</strong></td>
+<td style="width: 95px;">9.6 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 510315</strong></td>
+<td style="width: 95px;">7.7 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 553516&nbsp;</strong></td>
+<td style="width: 95px;">6.15 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 639917&nbsp;</strong></td>
+<td style="width: 95px;">5.25 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 726318&nbsp;</strong></td>
+<td style="width: 95px;">4.45 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 812719&nbsp;</strong></td>
+<td style="width: 95px;">3.8 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 899120&nbsp;</strong></td>
+<td style="width: 95px;">3.2 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 1028721</strong></td>
+<td style="width: 95px;">2.75 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 1158322</strong></td>
+<td style="width: 95px;">2.45 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>Up to 1287923</strong></td>
+<td style="width: 95px;">2.2 KLKS</td>
+</tr>
+<tr>
+<td style="width: 295px;"><strong>From 1287923 to Max Total Supply&nbsp;&nbsp;</strong></td>
+<td style="width: 95px;">2 KLKS</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 <p><strong>Staking Methods</strong></p>
 <table>
 <tbody>
@@ -90,27 +146,31 @@ Kalkulus is a decentralized digital asset based on Proof-of-Stake.</p>
 </tr>
 </tbody>
 </table>
-<p><strong></strong></p>
+<p>&nbsp;</p>
 <p><strong>Links</strong></p>
-<table style="width: 375px;">
+<table style="width: 373px;">
 <tbody>
 <tr>
-<td style="width: 93px;"><strong>Twitter</strong></td>
-<td style="width: 270px;">https://twitter.com/kalkulus_team</td>
+<td style="width: 116px;"><strong>Twitter</strong></td>
+<td style="width: 247px;"><a href="https://twitter.com/kalkulus_team" target="_blank" rel="noopener">https://twitter.com/kalkulus_team</a></td>
 </tr>
 <tr>
-<td style="width: 93px;"><strong>Discord Chat</strong></td>
-<td style="width: 270px;"><a href="https://discord.gg/UHDWDKT">Discord chat</a></td>
+<td style="width: 116px;"><strong>Discord Chat</strong></td>
+<td style="width: 247px;"><a title="https://discord.io/kalkulus" href="https://discord.io/kalkulus" target="_blank" rel="noopener">https://discord.io/kalkulus</a></td>
 </tr>
 <tr>
-<td style="width: 93px;"><strong>Website</strong></td>
-<td style="width: 270px;"><a href="http://kalkulus.trade/">http://www.kalkulus.trade</a></td>
+<td style="width: 116px;"><strong>Website</strong></td>
+<td style="width: 247px;"><a href="http://kalkulus.trade/">http://kalkulus.trade</a></td>
 </tr>
 <tr>
-<td style="width: 93px;"><strong>The Hub</strong></td>
-<td style="width: 270px;"><a href="https://hub.kalkul.us/">https://hub.kalkul.us</a></td>
+<td style="width: 116px;"><strong>The Hub</strong></td>
+<td style="width: 247px;"><a href="https://hub.kalkul.us/">https://hub.kalkul.us</a></td>
+</tr>
+<tr>
+<td style="width: 116px;"><strong>Investfeed</strong></td>
+<td style="width: 247px;"><a class="markup--anchor markup--p-anchor" href="https://www.investfeed.com/feed" target="_blank" rel="nofollow noopener" data-href="https://www.investfeed.com/feed">https://www.investfeed.com/feed</a></td>
 </tr>
 </tbody>
 </table>
-<p></p>
-<p></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
