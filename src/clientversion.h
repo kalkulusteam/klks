@@ -16,7 +16,7 @@
 
 //! These need to be macros, as clientversion.cpp's and klks*-res.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR 2
-#define CLIENT_VERSION_MINOR 7
+#define CLIENT_VERSION_MINOR 8
 #define CLIENT_VERSION_REVISION 0
 #define CLIENT_VERSION_BUILD 0
 
@@ -27,7 +27,7 @@
  * Copyright year (2009-this)
  * Todo: update this when changing our copyright comments in the source
  */
-#define COPYRIGHT_YEAR 2018
+#define COPYRIGHT_YEAR 2019
 
 #endif //HAVE_CONFIG_H
 
