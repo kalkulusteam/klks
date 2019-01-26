@@ -340,14 +340,15 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
       (71085, uint256("0xeb0bc62711c80e5baa82ebfef4ced677f6bf36a21fe21e2240a5edfd274b9083")) //rollback
       (307350, uint256("0x2f5377722c396791d007da5f494b394f42d69a0b9ad851e7772e9985b8c471ac"))
       (332974, uint256("0xf6a9467987c30133c6e9dd5e6975e33bf68373654452bc474c46fc86fbec424e")) // this checkpoint is written in the blockchain https://chainz.cryptoid.info/klks/tx.dws?717308.htm output 1
+      (423068, uint256("0xf03f566581f236a5ba656900d78a7770a01c4a49b8cbc9ecd8d078536733e189"))
 	;
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1543047640, // * UNIX timestamp of last checkpoint block
-    714138,    // * total number of transactions between genesis and last checkpoint
-                //   (the tx=... number in the SetBestChain debug.log lines)
-    3        // * estimated number of transactions per day after checkpoint
+    1548541909, // * UNIX timestamp of last checkpoint block
+    916176,    // * total number of transactions between genesis and last checkpoint
+              //   (the tx=... number in the SetBestChain debug.log lines)
+    3255      // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -397,7 +398,7 @@ public:
         nLastPOWBlock = 4999;   //Last Pow Block
         nMaturity = 20;
         nMasternodeCountDrift = 20;
-        nModifierUpgradeBlock = 380712;  // update to fork block - approx 1PM GMT+1 27th of December, 2018 
+        nModifierUpgradeBlock = 380712;  // update to fork block - approx 1PM GMT+1 27th of December, 2018
         nRewardUpdateBlock = 380712; // start of new rewards only used to disconnect old protocol so may be removed after fork block
         nMaxMoneyOut = 20000000 * COIN;
 
