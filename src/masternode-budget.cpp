@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2017-2018 Kalkulus Development Team
+// Copyright (c) 2016-2018 The PIVX developers
+// Copyright (c) 2017-2019 Kalkulus Development Team
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -797,9 +798,9 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
     //get block value and calculate from that
     CAmount nSubsidy = 0;
     if (nHeight > 4999 && nHeight <= 380712 ) { // Last block for fork height to new block reward - Approx 27.12.2018 1PM GMT +1
-        nSubsidy = 0.15 * COIN;
+        nSubsidy = 1.5 * COIN;
     } else if (nHeight > 380712 && nHeight <= 423913 ) {
-        nSubsidy = 0.12 * COIN;
+        nSubsidy = 1.2 * COIN;
     } else if (nHeight > 423913 && nHeight <= 467114 ) {
         nSubsidy = 0.96 * COIN;
     } else if (nHeight > 467114 && nHeight <= 510315 ) {
