@@ -5696,23 +5696,19 @@ int ActiveProtocol()
 
     // SPORK_14 was used for 70710. Leave it 'ON' so they don't see < 70710 nodes. They won't react to SPORK_15
     // messages because it's not in their code
+    //if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT)) {
+    //    if (chainActive.Tip()->nHeight >= Params().RewardUpdateBlock())
+    //        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    //}
 
-    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT)) {
+    // SPORK_15 is used for 80013. Nodes < 80013 don't see it and still get their protocol version via SPORK_14 and their
+    // used for spent stake vulnerability fix
+    if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2)) {
         if (chainActive.Tip()->nHeight >= Params().RewardUpdateBlock())
             return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
     }
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
-
-  /*  // SPORK_15 is used for 70910. Nodes < 70910 don't see it and still get their protocol version via SPORK_14 and their
-    // own ModifierUpgradeBlock()
-
-    if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-
-    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;*/
-    return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-
 }
 
 // requires LOCK(cs_vRecvMsg)
