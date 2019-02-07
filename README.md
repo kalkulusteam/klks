@@ -127,7 +127,7 @@
 <td style="width: 95px;">2.2 KLKS</td>
 </tr>
 <tr>
-<td style="width: 295px;"><strong>From 1287923 to Max Total Supply&nbsp;&nbsp;</strong></td>
+<td style="width: 295px;"><strong>From 1287924 to Max Total Supply&nbsp;&nbsp;</strong></td>
 <td style="width: 95px;">2 KLKS</td>
 </tr>
 </tbody>
