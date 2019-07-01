@@ -9,7 +9,7 @@
 <li><strong>SwifTX</strong> for fast transactions with guaranteed zero confirmation.</li>
 <li><strong>Obfuscation protocol</strong> for anonymized transactions using coin mixing technology.</li>
 </ul>
-<p>More information at <a href="http://www.kalkulus.trade" target="_blank" rel="noopener">http://www.kalkulus.trade</a></p>
+<p>More information at <a href="https://kalkul.us" target="_blank" rel="noopener">https://kalkul.us</a></p>
 <p>&nbsp;</p>
 <p><strong>Coin Specs</strong></p>
 <table>
