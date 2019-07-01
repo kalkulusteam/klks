@@ -160,11 +160,11 @@
 </tr>
 <tr>
 <td style="width: 116px;"><strong>Website</strong></td>
-<td style="width: 247px;"><a href="http://kalkulus.trade/">http://kalkulus.trade</a></td>
+<td style="width: 247px;"><a href="http://kalkulus.trade/">http://kalkul.us</a></td>
 </tr>
 <tr>
 <td style="width: 116px;"><strong>The Hub</strong></td>
-<td style="width: 247px;"><a href="https://hub.kalkul.us/">https://hub.kalkul.us</a></td>
+<td style="width: 247px;"><a href="https://hub.kalkul.us/">https://thehub.host</a></td>
 </tr>
 <tr>
 <td style="width: 116px;"><strong>Investfeed</strong></td>
