@@ -164,7 +164,7 @@
 </tr>
 <tr>
 <td style="width: 116px;"><strong>Discord Chat</strong></td>
-<td style="width: 247px;"><a title="https://discord.io/kalkulus" href="https://discord.io/kalkulus" target="_blank" rel="noopener">https://discord.io/kalkulus</a></td>
+<td style="width: 247px;"><a title="https://discord.me/kalkulus" href="https://discord.me/kalkulus" target="_blank" rel="noopener">https://discord.me/kalkulus</a></td>
 </tr>
 </tbody>
 </table>
