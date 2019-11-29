@@ -155,8 +155,8 @@
 <td style="width: 247px;"><a href="http://kalkulus.trade/">http://kalkul.us</a></td>
 </tr>
 <tr>
-<td style="width: 116px;"><strong>The Hub</strong></td>
-<td style="width: 247px;"><a href="https://hub.kalkul.us/">https://thehub.host</a></td>
+<td style="width: 116px;"><strong>TheHub Hosting Platform</strong></td>
+<td style="width: 247px;"><a href="https://thehub.host/">https://thehub.host</a></td>
 </tr>
 <tr>
 <td style="width: 116px;"><strong>Twitter</strong></td>
