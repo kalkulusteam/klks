@@ -151,14 +151,6 @@
 <table style="width: 373px;">
 <tbody>
 <tr>
-<td style="width: 116px;"><strong>Twitter</strong></td>
-<td style="width: 247px;"><a href="https://twitter.com/kalkulus_team" target="_blank" rel="noopener">https://twitter.com/kalkulus_team</a></td>
-</tr>
-<tr>
-<td style="width: 116px;"><strong>Discord Chat</strong></td>
-<td style="width: 247px;"><a title="https://discord.io/kalkulus" href="https://discord.io/kalkulus" target="_blank" rel="noopener">https://discord.io/kalkulus</a></td>
-</tr>
-<tr>
 <td style="width: 116px;"><strong>Website</strong></td>
 <td style="width: 247px;"><a href="http://kalkulus.trade/">http://kalkul.us</a></td>
 </tr>
@@ -167,8 +159,12 @@
 <td style="width: 247px;"><a href="https://hub.kalkul.us/">https://thehub.host</a></td>
 </tr>
 <tr>
-<td style="width: 116px;"><strong>Investfeed</strong></td>
-<td style="width: 247px;"><a class="markup--anchor markup--p-anchor" href="https://www.investfeed.com/feed" target="_blank" rel="nofollow noopener" data-href="https://www.investfeed.com/feed">https://www.investfeed.com/feed</a></td>
+<td style="width: 116px;"><strong>Twitter</strong></td>
+<td style="width: 247px;"><a href="https://twitter.com/kalkulus_team" target="_blank" rel="noopener">https://twitter.com/kalkulus_team</a></td>
+</tr>
+<tr>
+<td style="width: 116px;"><strong>Discord Chat</strong></td>
+<td style="width: 247px;"><a title="https://discord.io/kalkulus" href="https://discord.io/kalkulus" target="_blank" rel="noopener">https://discord.io/kalkulus</a></td>
 </tr>
 </tbody>
 </table>
