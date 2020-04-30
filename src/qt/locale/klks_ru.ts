@@ -71,11 +71,11 @@
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Копировать Адрес</translation>
+        <translation>&amp;Копировать адрес</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Копировать &amp;Метку</translation>
+        <translation>Копировать &amp;метку</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -137,7 +137,7 @@
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Введите новый пароль к кошельку. &lt;br/&gt;Используйте при этом десять &lt;/b&gt;или болле случайных символов &lt;/b&gt;или восем и более слов.</translation>
+        <translation>Введите новый пароль к кошельку. &lt;br/&gt;Используйте при этом десять &lt;/b&gt;или более случайных символов &lt;/b&gt;или восемь и более слов.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -236,7 +236,7 @@
     </message>
     <message>
         <source>Enter a klks Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите klks адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <translation>Введите klks адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашифрованный секретный ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
@@ -280,7 +280,7 @@
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
-        <translation>Зашифровать &amp;Ключ</translation>
+        <translation>Зашифровать &amp;ключ</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -288,7 +288,7 @@
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>Очистить &amp;Все</translation>
+        <translation>Очистить &amp;все</translation>
     </message>
     <message>
         <source>&amp;BIP 38 Decrypt</source>
@@ -296,7 +296,7 @@
     </message>
     <message>
         <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите Дешифровать Ключ чтобы создать секретный ключ. Нажав на Импортировать Адрес после дешифровки, вы добавите секретный ключ к кошельку.</translation>
+        <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите Дешифровать Ключ чтобы создать секретный ключ. Нажав на 'Импортировать адрес' после дешифровки, вы добавите секретный ключ к кошельку.</translation>
     </message>
     <message>
         <source>The klks address the message was signed with</source>
@@ -304,11 +304,11 @@
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified klks address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным klks адресом </translation>
+        <translation>Проверьте сообщение, чтобы убедиться, что оно было подписано указанным klks адресом </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
-        <translation>Дешифровать &amp;Ключ</translation>
+        <translation>Дешифровать &amp;ключ</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
@@ -316,15 +316,15 @@
     </message>
     <message>
         <source>Decrypted Key:</source>
-        <translation>Дешифрованный Ключ</translation>
+        <translation>Дешифрованный ключ</translation>
     </message>
     <message>
         <source>Import Address</source>
-        <translation>Импортировать Адрес</translation>
+        <translation>Импортировать адрес</translation>
     </message>
     <message>
         <source>Click "Decrypt Key" to compute key</source>
-        <translation>Нажмите "Дешифровать Ключ" для генерации ключа</translation>
+        <translation>Нажмите "Дешифровать ключ" для генерации ключа</translation>
     </message>
     <message>
         <source>The entered passphrase is invalid. </source>
@@ -447,7 +447,7 @@
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Показать или скрыть основное Окно</translation>
+        <translation>Показать или скрыть основное окно</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
@@ -551,7 +551,7 @@
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Показать список использованых адресов отправки </translation>
+        <translation>Показать список использованных адресов отправки </translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
@@ -559,7 +559,7 @@
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Показать список использованых адресов приёма</translation>
+        <translation>Показать список использованных адресов приёма</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -631,7 +631,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified klks addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным klks адресом </translation>
+        <translation>Проверьте сообщения, чтобы убедиться, что они были подписаны указанным klks адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -675,7 +675,7 @@
     </message>
     <message>
         <source>Show the Kalkulus Client help message to get a list with possible klks command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды klks</translation>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям команды klks</translation>
     </message>
     <message>
         <source>Kalkulus Client client</source>
@@ -739,7 +739,7 @@
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Трансакции после этой не будут видимы</translation>
+        <translation>Транзакции после этой не будут видимы</translation>
     </message>
     <message>
         <source>Error</source>
@@ -912,7 +912,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Received with address</source>
-        <translation>Полученно на адрес</translation>
+        <translation>Получено на адрес</translation>
     </message>
     <message>
         <source>DS Rounds</source>
@@ -952,7 +952,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation>Заблокировать нестраченные</translation>
+        <translation>Заблокировать неистраченные</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
@@ -992,7 +992,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Non-anonymized input selected. &lt;b&gt;Obfuscation will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscation, please deselect all non-nonymized inputs first and then check Obfuscation checkbox again.</source>
-        <translation>Выбран неанонимизированный ввод. &lt;b&gt;Запутывание будет отключено. &lt;/b&gt; &lt;br&gt;&lt;br&gt;. Если вы всё же хотите использовать запутывание, пожалуйста отмените сначала выбор всех неанонимизированных вводов, затем снова поставте флажок "Запутывание".</translation>
+        <translation>Выбран неанонимизированный ввод. &lt;b&gt;Запутывание будет отключено. &lt;/b&gt; &lt;br&gt;&lt;br&gt;. Если вы всё же хотите использовать запутывание, пожалуйста отмените сначала выбор всех неанонимизированных вводов, затем снова поставьте флажок "Запутывание".</translation>
     </message>
     <message>
         <source>highest</source>
@@ -1012,7 +1012,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Может вариировать +/- %1 duff(s) к вводу</translation>
+        <translation>Может варьировать +/- %1 duff(s) к вводу</translation>
     </message>
     <message>
         <source>n/a</source>
@@ -1064,7 +1064,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
-        <translation>Может вариировать +/- 1 байт на каждый ввод</translation>
+        <translation>Может варьировать +/- 1 байт на каждый ввод</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
@@ -1111,7 +1111,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Адрес ассоциирован с этим элемнтом списка адресов. Это может быть изменнено только для адресов отправления.</translation>
+        <translation>Адрес ассоциирован с этим элементом списка адресов. Это может быть изменено только для адресов отправления.</translation>
     </message>
     <message>
         <source>New receiving address</source>
@@ -1777,7 +1777,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Выберите стандарную дробную величину, которая будет показываться в графическом интерфейсе и при отправке монет.</translation>
+        <translation>Выберите стандартную дробную величину, которая будет показываться в графическом интерфейсе и при отправке монет.</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -1785,7 +1785,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>Сторониие ссылки (такие как block exporer), которые отображаются в закладке "транзакции" как контекстное меню. %s в ссыле будет замещено хэшем транзакции. Ссылки отделяются друг от друга вертикальной чертой |.</translation>
+        <translation>Сторонние ссылки (такие как block exporer), которые отображаются в закладке "транзакции" как контекстное меню. %s в ссылке будет замещено хэшем транзакции. Ссылки отделяются друг от друга вертикальной чертой |.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
@@ -1793,7 +1793,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
-        <translation>Активные опции коммандной строки, которые переписывают опции выше:</translation>
+        <translation>Активные опции командной строки, которые переписывают опции выше:</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1916,7 +1916,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Obfuscation Balance:</source>
-        <translation>Баланс Обфускации</translation>
+        <translation>Баланс обфускации</translation>
     </message>
     <message>
         <source>0 klks / 0 Rounds</source>
@@ -1928,11 +1928,11 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Try to manually submit a Obfuscation request.</source>
-        <translation>Попробуюте вручную создать запрос на Обфускацию.</translation>
+        <translation>Попробуйте вручную создать запрос на обфускацию.</translation>
     </message>
     <message>
         <source>Reset the current status of Obfuscation (can interrupt Obfuscation if it's in the process of Mixing, which can cost you money!)</source>
-        <translation>Сбросить текущий статус Обфускации (может прервать обфускацию, если она уже началась, что может стоить ваших денег!)</translation>
+        <translation>Сбросить текущий статус обфускации (может прервать обфускацию, если она уже началась, что может стоить ваших денег!)</translation>
     </message>
     <message>
         <source>Obfuscation</source>
@@ -1964,7 +1964,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
-        <translation>Деноминации, которые вы отправили на мастерноду. &lt;br&gt;Для смешиваыния, другие пользователи должны отправить точно такие же деноминации.</translation>
+        <translation>Деноминации, которые вы отправили на мастерноду. &lt;br&gt;Для смешивания, другие пользователи должны отправить точно такие же деноминации.</translation>
     </message>
     <message>
         <source>(Last Message)</source>
@@ -1980,7 +1980,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>out of sync</source>
-        <translation>несинронизировано</translation>
+        <translation>не синхронизировано</translation>
     </message>
     <message>
         <source>Disabled</source>
@@ -2009,7 +2009,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     <message>
         <source>Last Obfuscation message:
 </source>
-        <translation>Последнее сообщение Обфускации:
+        <translation>Последнее сообщение обфускации:
 </translation>
     </message>
     <message>
@@ -2018,7 +2018,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>If you don't want to see internal Obfuscation fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
-        <translation>Если вы не хотите видеть внутреннию плату / трансакции Обфускацци выберите "Наиболее распространненные" как Тип в закладке "Транзакции".</translation>
+        <translation>Если вы не хотите видеть внутреннюю плату / транзакции обфускации, выберите "Наиболее распространенные" как Тип в закладке "Транзакции".</translation>
     </message>
     <message>
         <source>Obfuscation requires at least %1 to use.</source>
@@ -2026,7 +2026,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Wallet is locked and user declined to unlock. Disabling Obfuscation.</source>
-        <translation>Кошелёк заблокирован и пользователь отклонен для разблокировки. Отключение Обфускации.</translation>
+        <translation>Кошелёк заблокирован и пользователь отклонен для разблокировки. Отключение обфускации.</translation>
     </message>
     <message>
         <source>Found enough compatible inputs to anonymize %1</source>
@@ -2034,11 +2034,11 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Start Obfuscation</source>
-        <translation>Начать Обфускацию</translation>
+        <translation>Начать обфускацию</translation>
     </message>
     <message>
         <source>Stop Obfuscation</source>
-        <translation>Остановить Обфускацию</translation>
+        <translation>Остановить обфускацию</translation>
     </message>
     <message>
         <source>Mixed</source>
@@ -2077,11 +2077,11 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid klks address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный klks адрес или неверные параметеры URI.</translation>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный klks адрес или неверные параметры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Файл запроса оплаты нечитается! Причиной может быть неверный файл запроса оплаты.</translation>
+        <translation>Файл запроса оплаты не читается! Причиной может быть неверный файл запроса оплаты.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
@@ -2249,7 +2249,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Количество соениднений</translation>
+        <translation>Количество соединений</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -2297,7 +2297,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Open the klks debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки klks. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <translation>Открыть протокол отладки klks. Это может занять некоторое время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2305,11 +2305,11 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>&amp;Console</source>
-        <translation>&amp;Коммандая строка</translation>
+        <translation>&amp;Командная строка</translation>
     </message>
     <message>
         <source>Clear console</source>
-        <translation>Очистить коммандную строку</translation>
+        <translation>Очистить командную строку</translation>
     </message>
     <message>
         <source>&amp;Network Traffic</source>
@@ -2373,11 +2373,11 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Last Send</source>
-        <translation>Посленее отправление</translation>
+        <translation>Последнее отправление</translation>
     </message>
     <message>
         <source>Last Receive</source>
-        <translation>Послений приём</translation>
+        <translation>Последний приём</translation>
     </message>
     <message>
         <source>Bytes Sent</source>
@@ -2409,7 +2409,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Recover transactions 1</source>
-        <translation>Востановление транзакций 1</translation>
+        <translation>Восстановление транзакций 1</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
@@ -2417,7 +2417,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Recover transactions 2</source>
-        <translation>Востановление транзакций 2</translation>
+        <translation>Восстановление транзакций 2</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (drop meta-data).</source>
@@ -2433,7 +2433,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
-        <translation>Кнопка ниже перезапустит кошелёк с некоторыми опциями кммандной строки чтобы отремотировать кошелёк, файлы блокчейна и пропавшие / устаревшие транзакции. </translation>
+        <translation>Кнопка ниже перезапустит кошелёк с некоторыми опциями командной строки чтобы отремонтировать кошелёк, файлы блокчейна и пропавшие / устаревшие транзакции. </translation>
     </message>
     <message>
         <source>Wallet repair options.</source>
@@ -2859,7 +2859,7 @@ https://www.transifex.com/klks-project/klks-project-translations</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified klks address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным klks адресом </translation>
+        <translation>Проверьте сообщение, чтобы убедиться, что оно было подписано указанным klks адресом </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
